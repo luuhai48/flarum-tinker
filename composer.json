@@ -1,0 +1,27 @@
+{
+    "name": "luuhai48/flarum-tinker",
+    "description": "Brings Laravel Tinker to your Flarum",
+    "type": "flarum-extension",
+    "license": "MIT",
+    "keywords": [
+        "extention",
+        "flarum",
+        "tinker",
+        "console"
+    ],
+    "authors": [
+        {
+            "name": "Luu Viet Hai",
+            "email": "luuhai.hn48@gmail.com"
+        }
+    ],
+    "require": {
+        "flarum/core": "^0.1.0-beta.13",
+        "laravel/tinker": "v1.0.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Luuhai48\\FlarumTinker\\": "src/"
+        }
+    }
+}
