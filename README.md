@@ -9,7 +9,7 @@ This package brings the awesomeness of Laravel Tinker to your Flarum.
 - First, require the package using composer
 
 ```bash
-composer require luuhai48/flarum-tinker:dev-master
+composer require luuhai48/flarum-tinker
 ```
 
 

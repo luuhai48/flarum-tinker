@@ -1,7 +1,6 @@
 {
     "name": "luuhai48/flarum-tinker",
     "description": "Brings Laravel Tinker to your Flarum",
-    "type": "flarum-extension",
     "license": "MIT",
     "keywords": [
         "extention",
