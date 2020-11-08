@@ -7,7 +7,7 @@ use Psy\Configuration;
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputArgument;
 
-use Luuhai48\FlarumTinker\ClassAliasAutoloader;
+use Luuhai48\FlarumTinker\ClassAliasAutoLoader;
 
 
 class TinkerCommand extends Command
@@ -64,7 +64,7 @@ class TinkerCommand extends Command
 
         $path .= '/composer/autoload_classmap.php';
 
-        $loader = ClassAliasAutoloader::register($shell, $path);
+        $loader = ClassAliasAutoLoader::register($shell, $path);
 
         try {
             $shell->run();

@@ -5,7 +5,7 @@ namespace Luuhai48\FlarumTinker;
 use Psy\Shell;
 use Illuminate\Support\Str;
 
-class ClassAliasAutoloader
+class ClassAliasAutoLoader
 {
     /**
      * The shell instance.
