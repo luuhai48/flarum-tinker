@@ -60,7 +60,7 @@ class TinkerCommand extends AbstractCommand
      */
     protected function fire()
     {
-        $this->info('Flarum Tinker v1.0.0 by <fg=red;options=bold>Luuhai48</>');
+        $this->info('Flarum Tinker v1.1.0 by <fg=red;options=bold>Luuhai48</>');
 
         $this->getApplication()->setCatchExceptions(false);
 
