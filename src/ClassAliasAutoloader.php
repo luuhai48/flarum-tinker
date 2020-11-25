@@ -159,6 +159,12 @@ class ClassAliasAutoloader
             return true;
         }
 
+        if (!$this->excludedAliases->filter(function ($alias) use ($class) {
+            return Str::startsWith($class, $alias);
+        })->isEmpty()) {
+            return false;
+        }
+
         $vendor = $this->vendorPath;
 
         if (!$this->includedPackages->filter(function ($package_path) use ($class, $vendor) {
@@ -168,12 +174,6 @@ class ClassAliasAutoloader
         }
 
         if (Str::startsWith($path, $vendor)) {
-            return false;
-        }
-
-        if (!$this->excludedAliases->filter(function ($alias) use ($class) {
-            return Str::startsWith($class, $alias);
-        })->isEmpty()) {
             return false;
         }
 
