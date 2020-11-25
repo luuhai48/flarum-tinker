@@ -12,7 +12,7 @@ A [Flarum](http://flarum.org) extension. It brings Laravel Tinker to Flarum.
 composer require luuhai48/flarum-tinker
 ```
 
-- Enable the extension in your admin setting panel, or you can add these lines to your `{project_root}/extend.php` file.
+Enable the extension in your admin setting panel, or you can add these lines to your `{project_root}/extend.php` file.
 
 ```php
 return [
@@ -33,13 +33,13 @@ composer update luuhai48/flarum-tinker
 composer dump-autoload -o
 ```
 
-- Run the command below, you will find a config file published to `{project_root}/config/tinker.php`.
+Run the command below, you will find a config file published to `{project_root}/config/tinker.php`.
 
 ```sh
 php flarum tinker:install
 ```
 
-- Modify config file if you want to alias classes from specific package of your choice.
+Modify config file if you want to alias classes from specific package of your choice.
 
 ---
 
